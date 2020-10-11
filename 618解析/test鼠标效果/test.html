@@ -1,0 +1,72 @@
+<html lang="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=4,user-scalable=no">
+
+    <title>鼠标实现效果</title></head>
+<link rel="stylesheet" href="../618解析网址/618G免费解析-无广告解析 VIP视频解析 解析接口源码 云解析 万能解析接口_files/buttons.css">
+<link rel="stylesheet" id="patternfly-adjusted-css" href="../618解析网址/618G免费解析-无广告解析 VIP视频解析 解析接口源码 云解析 万能解析接口_files/app.css" type="text/css" media="all">
+
+<!-- Bootstrap -->
+<link href="../../css/bootstrap3.37.css" rel="stylesheet">
+
+<script src="../../js/jquery-1.12.0.min.js"></script>
+<script src="../../js/bootstrap3.37.js"></script>
+<style>
+    #main article { border-bottom: none; }
+    body{
+        font: 500 .875em PingFang SC,Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+        background-color: #07040e;
+    }
+    #canvas {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        cursor: none;
+    }
+    .content{/*不能去除这两行数据，否则无法显示文字*/
+        position: absolute;
+        z-index: 11;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .splash{/*都是相对布局。*/
+        position: relative;
+    }
+</style>
+<body class="home page page-id-194 page-template page-template-page-homepage page-template-page-homepage-php custom-background"
+      ondragstart="window.event.returnValue=false"
+      oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<!--使用的类样式是BootStrap的div样式-->
+<div class="jumbotron">
+    <div class="container">
+        <div class="splash">
+            <div class="content">
+                <h1 class="wow fadeIn animated" data-wow-delay="750ms" style="visibility: visible; animation-delay: 750ms; animation-name: fadeIn;">
+                    鼠标炫酷效果实现
+                </h1>
+                <!--Button默认按钮样式 button-glow实现灯光效果 button-border边框效果 button-primary蓝色边框按钮效果  button-rounded圆角按钮-->
+                <button type="button" class="button button-glow button-border button-rounded button-primary">Primary</button>
+                <button type="button" class="button button-glow button-primary button-border">Secondary</button>
+                <button type="button" class="btn button-glow button-border">Success</button>
+                <button type="button" class="btn button-glow button-border button-rounded ">Danger</button>
+                <button type="button" class="btn button-glow button-border button-rounded btn-warning">Warning</button>
+                <button type="button" class="btn button-glow btn-info">Info</button>
+                <button type="button" class="btn button-glow btn-grey">Grey</button>
+            </div>
+        </div>
+    </div>
+    <!--填充容器 一个画布来的，开发者可以在上面绘制一系列的图片-->
+
+    <canvas id="canvas" width="745" height="926"></canvas>
+</div>
+
+<script src="../618解析网址/618G免费解析-无广告解析%20VIP视频解析%20解析接口源码%20云解析%20万能解析接口_files/hovertreewelcome.js"></script>
+<script src="paint.js"></script>
+</body></html>

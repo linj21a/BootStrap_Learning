@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4,user-scalable=no">
+    <title>什么是表单</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap3.37.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/bootstrap3.37.js"></script>
+</head>
+<body>
+<h2>表单</h2>
+<p>表单就是我们之前的form，但是bootstrap添加了一些样式上去。当其获取焦点的时候，会将边框变为蓝色。</p>
+<hr>
+<form><!--表单根标签-->
+    <div class="form-group">
+        <label for="exampleInputEmail1">邮箱</label><!--说明性文字-->
+        <!--placeholder是输入框里面的默认文本内容-->
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputPassword1">密码</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
+    </div>
+
+    <!--文件输入框-->
+    <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile"><!--与旧的传统的文件选择框不同，这里使用样式是同win10一样的文件选择框-->
+        <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <!--复选框，-->
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Check me out
+        </label>
+    </div>
+    <!--提交按钮-->
+    <button type="submit" class="btn btn-default">提交</button>
+
+
+    <!--注意事项：
+        不要将表单组和输入框组混合使用
+不要将表单组直接和输入框组混合使用。建议将输入框组嵌套到表单组中使用。
+    -->
+</form>
+</body>
+</html>

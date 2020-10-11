@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4,user-scalable=no">
+    <title>焦点状态和禁用状态和只读状态</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap3.37.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/bootstrap3.37.js"></script>
+</head>
+<body>
+<ul>
+    <li><p><b>焦点状态</b></p>
+        我们将某些表单控件的默认 <code>outline</code>样式移除，然后对 <code>:focus </code>状态赋予 <code>box-shadow </code>属性。
+        如我们选择该文本框，则获取焦点其边框颜色变为蓝色。
+    </li>
+    <li><p><b>禁用状态</b></p>
+        为输入框设置 disabled 属性可以禁止其与用户有任何交互（焦点、输入等）。被禁用的输入框颜色更浅，并且还添加了 not-allowed 鼠标状态。
+        <code>&lt; input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled &gt;</code>
+        <br>当设置了文本的域标题的时候，即fieldset，如果给它添加了禁用状态，则其里面的所有组件禁用，但a 标签的链接功能不受影响
+    </li>
+    <li><p><b>只读状态</b></p>
+        为输入框设置<code>readonly </code> 属性可以禁止用户修改输入框中的内容。
+        处于只读状态的输入框颜色更浅（就像被禁用的输入框一样），但是仍然保留标准的鼠标状态。
+        <code>&lt; input class="form-control" type="text" placeholder="Readonly input here…" readonly &gt;</code>
+    </li>
+</ul>
+<hr>
+<p>测试代码：测试三种状态：</p>
+<ul>
+    <li>焦点
+        <label>文本输入：</label>
+        <input class="form-control">
+    </li>
+    <li>
+        <label>禁用状态disabled</label>
+        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+    </li>
+    <li><label>只读状态readonly（无法执行输入）</label>
+        <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+
+    </li>
+
+</ul>
+
+</body>
+</html>

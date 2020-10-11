@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4,user-scalable=no">
+    <title>响应式工具</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!--需求：在小屏幕下隐藏222222，大屏幕则显示-->
+        <div class="col-4 " style="border: 1px solid red" >111111</div>
+        <div class="col-4 d-none d-lg-block " style="border: 1px solid red">222222</div><!--只在lg上显示-->
+        <div class="col-4" style="border: 1px solid red">333333</div>
+
+        <!--因为使用的是BootStrap4，相关的visible和hidden等属性已经被分离了。使用d-。。。等来代替-->
+    </div>
+</div>
+
+
+</body>
+</html>

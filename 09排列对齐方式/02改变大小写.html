@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4,user-scalable=no">
+    <title>改变大小写</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<p class="text-lowercase">Lowercased text.</p><!--字母小写-->
+<p class="text-uppercase">Uppercased text.</p><!--字母大写-->
+<p class="text-capitalize">Capitalized text.</p><!--大写文本-->
+
+
+<!--基本缩略语
+当鼠标悬停在缩写和缩写词上时就会显示完整内容，Bootstrap 实现了对 HTML 的 <abbr>
+元素的增强样式。缩略语元素带有 title 属性，外观表现为带有较浅的虚线框，鼠标移至上面时会变成带有“问号”的指针。
+如想看完整的内容可把鼠标悬停在缩略语上（对使用辅助技术的用户也可见）, 但需要包含 title 属性。-->
+<abbr title="attribute">attr</abbr>
+
+<!--为缩略语添加 .initialism 类，可以让 font-size 变得稍微小些。
+
+HTML is the best thing since sliced bread.-->
+
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+
+<!--引用 在你的文档中引用其他来源的内容。
+1、默认样式的引用
+将任何 HTML 元素包裹在 <blockquote> 中即可表现为引用样式。对于直接引用，我们建议用 <p> 标签。
+2、多种引用样式
+对于标准样式的 <blockquote>，可以通过几个简单的变体就能改变风格和内容。
+命名来源
+添加 <footer> 用于标明引用来源。来源的名称可以包裹进 <cite>标签中。
+-->
+<!--另一种展示风格
+通过赋予 .blockquote-reverse 类可以让引用呈现内容右对齐的效果。-->
+<blockquote class="blockquote-footer blockquote-reverse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4,user-scalable=no">
+    <title>HTML5中被支持的输入型控件</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap3.37.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/bootstrap3.37.js"></script>
+</head>
+<body>
+<h2 style="text-align: center">HTML5中被支持的输入型控件</h2>
+
+<ul>
+    <li><p><b>输入框</b></p>大部分表单控件、文本输入域控件，还支持所有 HTML5 类型的输入控件,<br/>如：<code>text
+        、password、datetime、datetime-local、date、month、time、week、number、email、url、search、
+        tel 和 color</code><br>必须添加类型声明
+        只有正确设置了 type 属性的输入控件才能被赋予正确的样式。
+    </li>
+    <li><p><b>文本域</b><code>textArea</code></p>
+        支持多行文本的表单控件。可根据需要改变 rows 属性。
+    </li>
+    <li><p><b>多选和单选框</b><code>checkbox、radio</code></p>
+        多选框（checkbox）用于选择列表中的一个或多个选项，而单选框（radio）用于从多个选项中只选择一个。
+    <br>内联单选和多选框
+        <br>通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，
+        可以使这些控件排列在一行。
+    </li>
+
+    </li>
+    <li><p><b>下拉菜单</b><code>select</code></p>
+        注意，很多原生选择菜单 - 即在 Safari 和 Chrome 中 - 的圆角是无法通过修改 <code>border-radius</code> 属性来改变的。
+        <br>对于标记了 multiple 属性的 <code>select</code> 控件来说，默认显示多选项。
+    </li>
+</ul>
+
+<hr>
+<p>下拉菜单默认显示多项的简单实例：</p>
+<select multiple class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+</body>
+</html>

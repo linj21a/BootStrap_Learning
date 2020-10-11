@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=4,user-scalable=no">
+    <title>校验状态</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap3.37.css" rel="stylesheet">
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/bootstrap3.37.js"></script>
+</head>
+<body>
+<h2 style="text-align: center">校验状态</h2>
+<p>Bootstrap 对表单控件的校验状态，如 error、warning 和 success 状态，都定义了样式。使用时，
+    添加 <code>.has-warning</code>、<code>.has-error</code> 或  <code>.has-success</code>类到这些控件的父元素即可。
+    任何包含在此元素之内的 <code>.control-label、.form-control 和 .help-block </code>元素都将接受这些校验状态的样式。</p>
+<p><b>注意事项</b></p>
+<ul>
+    <li>
+        <p>将验证状态传达给辅助设备和盲人用户
+           </p>
+        使用这些校验样式只是为表单控件提供一个可视的、基于色彩的提示，
+        但是并不能将这种提示信息传达给使用辅助设备的用户 - 例如屏幕阅读器 - 或者色盲用户。
+    </li>
+    <li>
+        <p>为了确保所有用户都能获取正确信息，Bootstrap 还提供了另一种提示方式。例如，你可以在表单控件的 <code>&lt;label&gt;</code> 标签上以
+            文本的形式显示提示信息（就像下面代码中所展示的）；包含一个 Glyphicon 字体图标 （还有赋予<code>.sr-only </code>
+            类的文本信息 - 参考Glyphicon 字体图标实例）；或者提供一个额外的 辅助信息 块。另外，对于使用辅助设备的用户，
+            无效的表单控件还可以赋予一个 <code>aria-invalid="true"</code> 属性。</p>
+    </li>
+</ul>
+
+<hr>
+<p>实战例子</p>
+<div class="form-group has-success"><!--校验成功-->
+    <label class="control-label" for="inputSuccess1">Input with success</label>
+    <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+    <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+</div>
+
+
+<div class="form-group has-warning"><!--警告-->
+    <label class="control-label" for="inputWarning1">Input with warning</label>
+    <input type="text" class="form-control" id="inputWarning1">
+</div>
+
+<div class="form-group has-error"><!--校验错误-->
+    <label class="control-label" for="inputError1">Input with error</label>
+    <input type="text" class="form-control" id="inputError1">
+</div>
+
+<div class="has-success">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="checkboxSuccess" value="option1">
+            Checkbox with success
+        </label>
+    </div>
+</div>
+<div class="has-warning">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="checkboxWarning" value="option1">
+            Checkbox with warning
+        </label>
+    </div>
+</div>
+<div class="has-error">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="checkboxError" value="option1">
+            Checkbox with error
+        </label>
+    </div>
+</div>
+</body>
+</html>
